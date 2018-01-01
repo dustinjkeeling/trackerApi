@@ -5,9 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "mongod --dbpath data --fork --logpath /dev/null",
-    "start": "node server.js",
-    "poststop": "mongod admin --eval 'db.shutdownServer()' > /dev/null"
+    "prestart": "mongod --dbpath data --fork --logpath logs/mongodb.log",
+    "start": "pm2 start server.js --name my-api",
+    "stop": "pm2 stop my-api",
+    "poststop": "mongod --dbpath data --shutdown"
   },
   "keywords": [
     "Express",

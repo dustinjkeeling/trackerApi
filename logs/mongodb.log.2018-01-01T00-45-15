@@ -1,0 +1,37 @@
+2018-01-01T00:43:44.769+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1174 port=27017 dbpath=/home/dustin/API/trackerApi/data 64-bit host=testing-server
+2018-01-01T00:43:44.769+0000 I CONTROL  [initandlisten] db version v3.2.18
+2018-01-01T00:43:44.769+0000 I CONTROL  [initandlisten] git version: 4c1bae566c0c00f996a2feb16febf84936ecaf6f
+2018-01-01T00:43:44.769+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+2018-01-01T00:43:44.769+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-01-01T00:43:44.769+0000 I CONTROL  [initandlisten] modules: none
+2018-01-01T00:43:44.769+0000 I CONTROL  [initandlisten] build environment:
+2018-01-01T00:43:44.769+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+2018-01-01T00:43:44.769+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2018-01-01T00:43:44.769+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-01-01T00:43:44.769+0000 I CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "data" }, systemLog: { destination: "file", path: "logs/mongodb.log" } }
+2018-01-01T00:43:44.778+0000 I -        [initandlisten] Detected data files in /home/dustin/API/trackerApi/data created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-01-01T00:43:44.779+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=1G,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-01-01T00:43:44.960+0000 I STORAGE  [initandlisten] WiredTiger [1514767424:960312][1174:0x7f8bc90cd0c0], txn-recover: Main recovery loop: starting at 10/6144
+2018-01-01T00:43:45.028+0000 I STORAGE  [initandlisten] WiredTiger [1514767425:28606][1174:0x7f8bc90cd0c0], txn-recover: Recovering log 10 through 11
+2018-01-01T00:43:45.029+0000 I STORAGE  [initandlisten] WiredTiger [1514767425:29129][1174:0x7f8bc90cd0c0], txn-recover: Recovering log 11 through 11
+2018-01-01T00:43:45.127+0000 I CONTROL  [initandlisten] 
+2018-01-01T00:43:45.127+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2018-01-01T00:43:45.127+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2018-01-01T00:43:45.128+0000 I CONTROL  [initandlisten] 
+2018-01-01T00:43:45.128+0000 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. rlimits set to 3782 processes, 1048576 files. Number of processes should be at least 524288 : 0.5 times number of files.
+2018-01-01T00:43:45.128+0000 I CONTROL  [initandlisten] 
+2018-01-01T00:43:45.137+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/home/dustin/API/trackerApi/data/diagnostic.data'
+2018-01-01T00:43:45.137+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-01-01T00:43:45.139+0000 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
+2018-01-01T00:44:08.382+0000 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2018-01-01T00:44:08.383+0000 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2018-01-01T00:44:08.385+0000 I CONTROL  [signalProcessingThread] now exiting
+2018-01-01T00:44:08.385+0000 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2018-01-01T00:44:08.385+0000 I NETWORK  [signalProcessingThread] closing listening socket: 6
+2018-01-01T00:44:08.385+0000 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2018-01-01T00:44:08.385+0000 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-27017.sock
+2018-01-01T00:44:08.385+0000 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2018-01-01T00:44:08.385+0000 I NETWORK  [signalProcessingThread] shutdown: going to close sockets...
+2018-01-01T00:44:08.385+0000 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2018-01-01T00:44:08.462+0000 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2018-01-01T00:44:08.462+0000 I CONTROL  [signalProcessingThread] dbexit:  rc: 0
