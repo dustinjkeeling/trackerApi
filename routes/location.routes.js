@@ -1,19 +1,18 @@
 module.exports = function(app) {
+  var devices = require("../controllers/location.controller.js");
 
-    var devices = require('../controllers/location.controller.js');
+  // Create a new location from devices
+  app.post("/location", devices.create);
 
-    // Create a new Note
-    app.post('/location', devices.create);
+  // Retrieve all locations for devices
+  app.get("/location", devices.findAll);
 
-    // Retrieve all Notes
-    app.get('/location', devices.findAll);
+  // Retrieve a single location for deviceId
+  app.get("/location/:deviceId", devices.findOne);
 
-    // Retrieve a single Note with noteId
-    app.get('/location/:deviceId', devices.findOne);
+  // Update a location for deviceId
+  app.put("/location/:deviceId", devices.update);
 
-    // Update a Note with noteId
-    app.put('/location/:deviceId', devices.update);
-
-    // Delete a Note with noteId
-    app.delete('/location/:deviceId', devices.delete);
-}
+  // Delete a location for deviceId
+  app.delete("/location/:deviceId", devices.delete);
+};
